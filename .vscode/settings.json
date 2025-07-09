@@ -1,0 +1,7 @@
+{
+    "C_Cpp.copilotHover": "enabled",
+    "github.copilot.chat.agent.autoFix": true,
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "github.copilot.chat.codesearch.enabled": true,
+    "github.copilot.chat.languageContext.inline.typescript.enabled": true
+}
