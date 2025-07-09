@@ -3,7 +3,6 @@ import { Navigate, Route, Routes } from 'react-router-dom'
 import HomePage from './pages/HomePage'
 import LoginPage from './pages/LoginPage'
 import ProfilePage from './pages/ProfilePage'
-import assets from './assets/assets'
 import { Toaster } from 'react-hot-toast'
 import { AuthContext } from '../context/AuthContext'
 
@@ -13,7 +12,7 @@ const App = () => {
   
   const {authUser} = useContext(AuthContext)
   return (
-    <div className="min-h-screen bg-cover bg-center bg-no-repeat" style={{backgroundImage:[url('/bgImage.svg')]}}>
+    <div className="min-h-screen bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url('/bgImage.svg')` }}>
       <Toaster/>
       <Routes>
         <Route path='/' element={authUser ? <HomePage/>: <Navigate to ="/login"/>} />
